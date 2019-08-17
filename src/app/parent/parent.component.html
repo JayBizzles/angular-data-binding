@@ -1,3 +1,8 @@
-<p>parent works!</p>
-<p>{{parentVariable}}</p>
-<app-child [parentPassedIn]='parentVariable'></app-child>
+<div>
+        <p>parent works!</p>
+        <p>{{parentVariable}}</p>
+        <p>{{variablePassedInFromChild}}</p>
+        <app-child (passInVariableEvent)="setVariablePassedInFromChild($event)" [parentPassedIn]='parentVariable'></app-child>
+        
+</div>
+

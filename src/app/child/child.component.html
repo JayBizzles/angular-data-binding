@@ -1,3 +1,6 @@
 <p>child works!</p>
 <p>{{parentPassedIn}}</p>
-<p>{{parentPassedIn.toUpperCase()}}</p>
+<!-- Create a ngmodel and use banana in the box to setup catching the userinput -->
+<input type = "text" [(ngModel)] = "userInput" >
+<!-- Create a button so that we can know when to make the even happen and have out data sent -->
+<button (click) = "triggerEvent()"> button </button>
