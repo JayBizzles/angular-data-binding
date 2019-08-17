@@ -1,8 +1,10 @@
 <div>
         <p>parent works!</p>
         <p>{{parentVariable}}</p>
-        <p>{{variablePassedInFromChild}}</p>
+        <!-- takes that trigger event attached to the child component and passes in userInput
+        to setVariablePassedInFromChild's $event parameter -->
         <app-child (passInVariableEvent)="setVariablePassedInFromChild($event)" [parentPassedIn]='parentVariable'></app-child>
-        
+        <!-- displays variable passed from child in the parent component, because it is called after the function setVariable... -->
+        <p>{{variablePassedInFromChild}}</p>
 </div>
 

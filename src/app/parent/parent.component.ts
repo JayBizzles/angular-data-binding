@@ -10,7 +10,7 @@ export class ParentComponent implements OnInit {
   parentVariable:string = "hello world!";
   variablePassedInFromChild: string;
   constructor() {}
-  
+  // takes in the variable passed from the event and sets it tio variablePassedFromChild
   setVariablePassedInFromChild(dataPassedIn:string){
     this.variablePassedInFromChild = dataPassedIn;
   }   

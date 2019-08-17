@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// need to import FormsModule so that ew can ngModlell our input
 import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
